@@ -12,6 +12,7 @@
     "@internationalized/date": "^3.5.4",
     "@nextui-org/react": "^2.4.1",
     "@nextui-org/system": "^2.2.1",
+    "aos": "^2.3.4",
     "apexcharts": "^3.49.1",
     "clsx": "^2.0.0",
     "framer-motion": "^11.2.10",

@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import styled from "styled-components";
-// Assets
+import {Image} from "@nextui-org/react";
 
 export default function ClientSlider() {
   const settings = {
@@ -34,45 +34,33 @@ export default function ClientSlider() {
       },
     ],
   };
+
   return (
-    <div>
       <Slider {...settings}>
-        <LogoWrapper className="flexCenter">
-          <ImgStyle src={"/clients/logo01.svg"} alt="client logo" />
+        <LogoWrapper>
+          <ImgStyle  src={"/faber-castell.png"}  alt="client logo" />
         </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <ImgStyle src={"/clients/logo02.svg"} alt="client logo" />
+        <LogoWrapper>
+          <ImgStyle  src={"/joyko.png"}  alt="client logo" />
         </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <ImgStyle src={"/clients/logo03.svg"} alt="client logo" />
+        <LogoWrapper>
+          <ImgStyle src={"/kenko.png"} alt="client logo" />
         </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <ImgStyle src={"/clients/logo04.svg"} alt="client logo" />
+        <LogoWrapper>
+          <ImgStyle src={"/snowman.png"} alt="client logo" />
         </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <ImgStyle src={"/clients/logo05.svg"} alt="client logo" />
+        <LogoWrapper>
+          <ImgStyle src={"/grebel.png"} alt="client logo" />
         </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <ImgStyle src={"/clients/logo06.svg"} alt="client logo" />
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <ImgStyle src={"/clients/logo02.svg"} alt="client logo" />
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <ImgStyle src={"/clients/logo01.svg"} alt="client logo" />
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <ImgStyle src={"/clients/logo04.svg"} alt="client logo" />
-        </LogoWrapper>
-        <LogoWrapper className="flexCenter">
-          <ImgStyle src={"/clients/logo06.svg"} alt="client logo" />
+              <LogoWrapper>
+          <ImgStyle src={"/casio.png"} alt="client logo" />
         </LogoWrapper>
       </Slider>
-    </div>
   );
 }
 
 const LogoWrapper = styled.div`
+ 
   width: 100%;
   height: 100px;
   cursor: pointer;
@@ -81,6 +69,7 @@ const LogoWrapper = styled.div`
     border: 0px;
   }
 `;
+
 const ImgStyle = styled.img`
   width: 100%;
   height: 100%;

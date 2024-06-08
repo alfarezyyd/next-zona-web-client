@@ -6,38 +6,58 @@ import FullButton from "../Buttons/FullButton";
 import QuotesIcon from "../../assets/svg/Quotes";
 import Dots from "../../assets/svg/Dots";
 import {Image} from "@nextui-org/react";
+import {Typewriter} from "react-simple-typewriter";
 
 export default function Header() {
   return (
-    <Wrapper id="home" className="container flexSpaceCenter">
+    <Wrapper id="home" className="container flexSpaceCenter" data-aos="fade-up">
       <LeftSide className="flexCenter">
         <div>
-          <h1 className="extraBold font60">We are Digital Agency.</h1>
+          <h1 className="extraBold font60">Menyediakan Segala Kebutuhan <br/>
+            <div className="text-primary"><Typewriter
+              loop={0}
+              cursor={true}
+              cursorBlinking={true}
+              typeSpeed={100}
+              deleteSpeed={100}
+              delaySpeed={200}
+              words={[
+                "Pulpen",
+                "Pensil",
+                "Buku",
+                "ATK",
+              ]}/>
+            </div>
+          </h1>
           <HeaderP className="font13 semiBold">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            Selamat datang di Zona Online Store, destinasi terbaik Anda untuk menemukan berbagai macam buku dan alat
+            tulis berkualitas. Kami berkomitmen untuk menyediakan koleksi terlengkap dan terbaru bagi Anda, baik untuk
+            keperluan pribadi, sekolah, maupun pekerjaan.
           </HeaderP>
           <BtnWrapper>
-            <FullButton title="Get Started" />
+            <FullButton title="Lihat Product"/>
           </BtnWrapper>
         </div>
       </LeftSide>
       <RightSide>
         <ImageWrapper>
-          <Image className="radius8" src="/header-img.png" alt="office" style={{zIndex: 9}}/>
+          <Image className="radius8" width={400} height={370} src="/hero-image.jpg" alt="office" style={{zIndex: 9}}/>
           <QuoteWrapper className="flexCenter darkBg radius8">
             <QuotesWrapper>
-              <QuotesIcon />
+              <QuotesIcon/>
             </QuotesWrapper>
             <div>
               <p className="font15 whiteColor">
-                <em>Friends, such as we desire, are dreams and fables. Friendship demands the ability to do without it.</em>
+                <em>
+                  "Saya sangat terbantu dengan layanan pelanggan yang ramah dan responsif. Mereka membantu saya
+                  menemukan buku yang saya cari. Harga terjangkau dan banyak promo menarik!"
+                </em>
               </p>
-              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Ralph Waldo Emerson</p>
+              <p className="font13 orangeColor textRight" style={{marginTop: '10px'}}>Elon Musk</p>
             </div>
           </QuoteWrapper>
           <DotsWrapper>
-            <Dots />
+            <Dots/>
           </DotsWrapper>
         </ImageWrapper>
         <GreyDiv className="lightBg"></GreyDiv>

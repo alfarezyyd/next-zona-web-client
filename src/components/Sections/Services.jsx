@@ -9,93 +9,47 @@ import {Image} from "@nextui-org/react";
 
 export default function Services() {
   return (
-    <Wrapper id="services">
-      <div className="lightBg" style={{padding: "50px 0"}}>
+    <Wrapper id="services" >
+      <div className="lightBg" data-aos="fade-left" style={{padding: "50px 0"}}>
         <div className="container">
           <ClientSlider/>
         </div>
       </div>
-      <div className="whiteBg" style={{padding: "60px 0"}}>
+      <div className="whiteBg" data-aos="fade-right" style={{padding: "60px 0"}}>
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Services</h1>
+            <h1 className="font40 extraBold">Apa yang Kami Tawarkan?</h1>
             <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-              <br/>
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              Kami menyediakan dan menjamin beberapa layanan terbaik <br/>
+              yang akan menjadikan pengalaman belanja Anda berbeda
             </p>
           </HeaderInfo>
           <ServiceBoxRow className="flex">
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="roller"
-                title="Graphic Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+                title="Koleksi Buku Terlengkap"
+                subtitle="Dari buku fiksi hingga non-fiksi, buku pelajaran, hingga buku anak-anak, kami memiliki berbagai genre yang siap memenuhi kebutuhan bacaan Anda."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="monitor"
-                title="Web Design"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore."
+                title="Alat Tulis dan Kantor Terlengkap dan Terbaik"
+                subtitle="Pens, pensil, notebook, hingga perlengkapan kantor, semua tersedia di sini untuk menunjang produktivitas Anda."
               />
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
               <ServiceBox
                 icon="browser"
-                title="Development"
-                subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat."
-              />
+                title="Diskon dan Penawaran Spesial"
+                subtitle="Nikmati berbagai promo menarik dan diskon spesial setiap minggunya. Jangan lewatkan kesempatan untuk mendapatkan produk favorit Anda dengan harga terbaik."/>
             </ServiceBoxWrapper>
             <ServiceBoxWrapper>
-              <ServiceBox icon="printer" title="Print"
-                          subtitle="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."/>
+              <ServiceBox icon="printer" title="Rekomendasi dan Ulasan"
+                          subtitle="Kami menyediakan rekomendasi buku terbaik serta ulasan dari para pembaca lain untuk membantu Anda memilih buku dan alat tulis yang sesuai dengan kebutuhan Anda."/>
             </ServiceBoxWrapper>
           </ServiceBoxRow>
-        </div>
-        <div className="lightBg">
-          <div className="container">
-            <Advertising className="flexSpaceCenter">
-              <AddLeft>
-                <h4 className="font15 semiBold">A few words about company</h4>
-                <h2 className="font40 extraBold">A Study of Creativity</h2>
-                <p className="font12">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                  labore et dolore magna aliquyam erat, sed
-                  diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                </p>
-                <ButtonsRow className="flexNullCenter" style={{margin: "30px 0"}}>
-                  <div style={{width: "190px"}}>
-                    <FullButton title="Get Started" action={() => alert("clicked")}/>
-                  </div>
-                  <div style={{width: "190px", marginLeft: "15px"}}>
-                    <FullButton title="Contact Us" action={() => alert("clicked")} border/>
-                  </div>
-                </ButtonsRow>
-              </AddLeft>
-              <AddRight>
-                <AddRightInner>
-                  <div className="flexNullCenter">
-                    <AddImgWrapp1 className="flexCenter">
-                      <Image src="/add/1.png" alt="officer"/>
-                    </AddImgWrapp1>
-                    <AddImgWrapp2>
-                      <Image src="/add/1.png" alt="officer"/>
-                    </AddImgWrapp2>
-                  </div>
-                  <div className="flexNullCenter">
-                    <AddImgWrapp3>
-                      <Image src="/add/1.png" alt="officer"/>
-
-                    </AddImgWrapp3>
-                    <AddImgWrapp4>
-                      <Image src="/add/1.png" alt="officer"/>
-                    </AddImgWrapp4>
-                  </div>
-                </AddRightInner>
-              </AddRight>
-            </Advertising>
-          </div>
         </div>
       </div>
     </Wrapper>

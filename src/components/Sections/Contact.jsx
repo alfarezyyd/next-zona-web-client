@@ -6,7 +6,7 @@ import {Image} from "@nextui-org/react";
 
 export default function Contact() {
   return (
-    <Wrapper id="contact">
+    <Wrapper id="contact" data-aos="zoom-in">
       <div className="lightBg">
         <div className="container">
           <HeaderInfo>
@@ -29,21 +29,21 @@ export default function Contact() {
                 <textarea rows="4" cols="50" type="text" id="message" name="message" className="font20 extraBold" />
               </Form>
               <SumbitWrapper className="flex">
-                <ButtonInput type="submit" value="Send Message" className="pointer animate radius8" style={{ maxWidth: "220px" }} />
+                <ButtonInput type="submit" onClick={() => alert("Data terkirim")} value="Send Message" className="pointer animate radius8" style={{ maxWidth: "220px" }} />
               </SumbitWrapper>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
               <div style={{ width: "50%" }} className="flexNullCenter flexColumn">
                 <ContactImgBox>
-                  <Image src={"/contact-1.png"} alt="office" className="radius6" />
+                  <Image src={"/contact-1.jpg"} alt="office" className="radius6" />
                 </ContactImgBox>
                 <ContactImgBox>
-                  <Image src={"/contact-2.png"} alt="office" className="radius6" />
+                  <Image src={"/contact-2.jpg"} alt="office" className="radius6" />
                 </ContactImgBox>
               </div>
               <div style={{ width: "50%" }}>
                 <div style={{ marginTop: "100px" }}>
-                  <Image src={"/contact-3.png"} alt="office" className="radius6" />
+                  <img src={"/contact-3.jpg"} alt="office" className="radius6" />
                 </div>
               </div>
             </div>
