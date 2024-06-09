@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Button, Input, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, Select, SelectItem, useDisclosure } from '@nextui-org/react';
 import Cookies from 'js-cookie';
 
-const EditCategory = ({ categoryToEdit, onSave, onClose, categories }) => {
+const EditCategory = ({ categoryToEdit, onClose, categories }) => {
   const [editCategoryRequest, setEditCategoryRequest] = useState({
     name: '',
     category_id: '',

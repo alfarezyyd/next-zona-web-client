@@ -136,7 +136,6 @@ export const Categories = () => {
       {categoryToEdit && (
         <EditCategory
           categoryToEdit={categoryToEdit}
-          onSave={handleSave} // Panggil fetchCategories setelah penyimpanan berhasil
           onClose={() => setCategoryToEdit(null)} // Tutup modal ketika selesai
           categories={categories}
         />

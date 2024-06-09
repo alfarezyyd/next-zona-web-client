@@ -35,7 +35,7 @@ export const SidebarWrapper = () => {
               title="Home"
               icon={<HomeIcon/>}
               isActive={pathname === "/"}
-              href="/"
+              href="/admin"
             />
             <SidebarMenu title="Main Menu">
               <SidebarItem

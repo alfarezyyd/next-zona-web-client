@@ -64,10 +64,10 @@ export default function Register() {
       {/* Sign in section */}
       <div className="mt-[4vh] w-full max-w-full flex-col items-center md:pl-4 lg:pl-0 xl:max-w-[420px]">
         <h4 className="mb-2.5 text-4xl font-semibold text-navy-700 dark:text-white">
-          Sign In
+          Sign Up
         </h4>
         <p className="mb-9 ml-1 font-light text-base text-gray-600">
-          Enter your email and password to sign in!
+          Fill these columns for create an account!
         </p>
         <Button
           className="mb-6 flex h-[50px] w-full items-center justify-center gap-2 rounded-xl bg-[#F4F7FE] hover:cursor-pointer dark:bg-navy-800">
@@ -151,13 +151,13 @@ export default function Register() {
         </form>
         <div className="mt-4">
           <span className=" text-sm font-medium text-navy-700 dark:text-gray-600">
-            Not registered yet?
+            Already have an account?
           </span>
           <a
-            href=" "
+            href="/auth/login"
             className="ml-1 text-sm font-medium text-brand-500 hover:text-brand-600 dark:text-white"
           >
-            Create an account
+            Login
           </a>
         </div>
       </div>

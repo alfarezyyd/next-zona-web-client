@@ -48,7 +48,7 @@ export default function Login() {
     });
 
     if (response.ok) {
-      push('/dashboard');  // Redirect to the dashboard or another protected route
+      push('/products');  // Redirect to the dashboard or another protected route
     } else {
       const data = await response.json();
       setUserError(data.errors || {general: 'Login failed'});
